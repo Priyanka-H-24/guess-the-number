@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>guess number</title>
+        <style>
+            .div1{
+                height: 30%;
+                width: 17%;
+                border: 5px solid gray;
+                padding-top: 20px;
+                padding-left: 40px;
+                border-radius: 10%;
+                background-color: black;
+                color: white;
+                font-family: cursive;
+            }
+            #bt{
+                margin-left: 53px;
+                font-family: cursive;
+                background-color: gray;
+                color: black;
+                padding: 3px 15px;
+                border-radius: 10px;
+            }
+            #ip{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+        Enter num between 1 to 5
+        <br>
+        <br>
+        <input type="text" id="ip">
+        <br>
+        <br>
+        <button id="bt">submit</button>
+        <br>
+        
+        <p id="pr">
+
+        </div>
+        
+
+        </p>
+        <script type="text/javascript">
+        document.getElementById("bt").onclick=function(){
+        var com=Math.floor(Math.random()* 5);
+        var user=document.getElementById("ip").value;
+        document.getElementById("pr").innerHTML="Generated number is "+com;
+        if(com==user){
+            alert(" correct guess");
+        }
+        else{
+            alert("try agian");
+        }
+
+        }
+        
+        </script>
+    </body>
+</html>
